@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mytyrch/services/bidding-owner-list-provider.dart';
+import 'package:provider/provider.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mytyrch/ui/nav_drawer.dart';
 import 'package:mytyrch/pages/bidding_page.dart';
@@ -21,6 +23,8 @@ class _MainScreenState extends State<MainScreen> {
   final _activeColor = Colors.white;
   @override
   Widget build(BuildContext context) {
+    Provider.of<BiddingOwnerListProvider>(context, listen: false)
+        .fetchBiddingOwners();
     return Scaffold(
       backgroundColor: Colors.grey[300],
       endDrawer: NavDrawer(),

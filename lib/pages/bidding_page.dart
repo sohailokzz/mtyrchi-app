@@ -12,6 +12,7 @@ class _BiddingPageState extends State<BiddingPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           automaticallyImplyLeading: false,
           title: Center(
@@ -56,6 +57,7 @@ class _BidsState extends State<Bids> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.blue,
       height: 200,
       child: GestureDetector(
         onTap: () {},

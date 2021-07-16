@@ -22,12 +22,6 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   iconTheme: IconThemeData(
-      //     color: Colors.blue,
-      //   ),
-      //   backgroundColor: Colors.white,
-      // ),
       backgroundColor: Colors.grey[300],
       endDrawer: NavDrawer(),
       body: getBody(),
